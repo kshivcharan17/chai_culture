@@ -86,16 +86,22 @@ p {
   margin: 0 0 18px;
 }
 
-.lead,
+.tagline,
 .brand-story {
   font-size: 15px;
   line-height: 1.8;
   color: rgba(43, 33, 29, 0.86);
 }
 
-.lead {
+.tagline {
   max-width: 540px;
   margin: 0 auto 26px;
+}
+
+.launching {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
 }
 
 .brand-story {
@@ -114,7 +120,7 @@ p {
 }
 
 .signup input {
-  flex: 1 1 230px;
+  flex: 1 1 auto;
   min-width: 0;
   padding: 15px 22px;
   border-radius: 999px;
@@ -189,37 +195,36 @@ p {
   outline-offset: 2px;
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
 .socials a {
-  margin: 0 14px;
-  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.7);
   color: var(--gold-deep);
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 3px;
-  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.socials a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 1px;
-  background: linear-gradient(90deg, var(--gold), var(--gold-deep));
-  transition: width 0.25s ease;
+.socials a svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
-.socials a:hover {
-  color: #8f6c1f;
-}
-
-.socials a:hover::after,
-.socials a:focus-visible::after {
-  width: 100%;
+.socials a:hover,
+.socials a:focus-visible {
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(212, 175, 55, 0.45);
 }
 
 @media (max-width: 600px) {
@@ -240,6 +245,7 @@ p {
   .signup button,
   .signup input {
     width: 100%;
+    flex: 0 0 auto;
   }
 }
 

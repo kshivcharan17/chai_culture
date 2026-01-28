@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #F5F1E9;
+    color: #3B2F2F;
+    text-align: center;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C9A227;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.launching {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #C9A227;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.signup {
+    margin-bottom: 25px;
+}
+
+.signup input {
+    padding: 12px;
+    width: 65%;
+    border: 1px solid #3B2F2F;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup button {
+    padding: 12px 20px;
+    border: none;
+    background: #C9A227;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signup button:hover {
+    background: #a8861d;
+}
+
+.brand-story {
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #C9A227;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    .signup input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .signup button {
+        width: 100%;
+        margin-left: 0;
+    }
+}

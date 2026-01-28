@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background:
-        radial-gradient(circle at top center, rgba(122, 32, 47, 0.18), transparent 45%),
-        linear-gradient(135deg, #f8f4ee, #e9dfd2);
-    color: #3A2A2A;
+        radial-gradient(circle at top center, rgba(212,175,55,0.15), transparent 45%),
+        linear-gradient(135deg, #f4efe6, #e7dcc8);
+    color: #2f2320;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,23 +18,23 @@ body::before {
     position: fixed;
     inset: 0;
     background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
-    opacity: 0.035;
+    opacity: 0.03;
     pointer-events: none;
     z-index: 0;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(18px);
-    border-radius: 26px;
-    padding: 70px 45px;
-    max-width: 700px;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(20px);
+    border-radius: 28px;
+    padding: 75px 50px;
+    max-width: 720px;
     width: 90%;
     text-align: center;
     box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.14),
-        0 0 60px rgba(122, 32, 47, 0.08);
-    border: 1px solid rgba(122, 32, 47, 0.25);
+        0 35px 90px rgba(0, 0, 0, 0.16),
+        0 0 70px rgba(212,175,55,0.10);
+    border: 1px solid rgba(212,175,55,0.35);
     position: relative;
     z-index: 1;
 }
@@ -43,52 +43,79 @@ body::before {
     content: "";
     position: absolute;
     inset: -2px;
-    border-radius: 28px;
-    background: linear-gradient(135deg, rgba(122, 32, 47, 0.25), transparent 60%);
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(212,175,55,0.28), transparent 60%);
     z-index: -1;
 }
 
 .logo {
-    width: 110px;
-    margin-bottom: 22px;
-    filter: drop-shadow(0 0 12px rgba(122, 32, 47, 0.45));
+    width: 115px;
+    margin-bottom: 24px;
+    filter: drop-shadow(0 0 14px rgba(212,175,55,0.45));
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 46px;
+    font-size: 48px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #7A202F;
-    margin-bottom: 10px;
+    color: #b9932f;
+    margin-bottom: 12px;
     text-shadow:
-        0 0 10px rgba(122,32,47,0.25),
-        0 3px 4px rgba(0,0,0,0.12);
+        0 0 12px rgba(212,175,55,0.3),
+        0 3px 5px rgba(0,0,0,0.15);
 }
 
 .divider {
-    width: 90px;
+    width: 100px;
     height: 2px;
-    margin: 20px auto 30px;
-    background: linear-gradient(90deg, transparent, #7A202F, transparent);
+    margin: 22px auto 32px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+.tagline {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 34px;
+    letter-spacing: 0.5px;
 }
 
 .launching {
     display: inline-block;
-    padding: 11px 26px;
+    padding: 12px 28px;
     border-radius: 40px;
-    background: linear-gradient(90deg, #7A202F, #5a1824);
+    background: linear-gradient(90deg, #d4af37, #b9932f);
     color: #fff;
     font-size: 13px;
-    margin-bottom: 35px;
-    box-shadow: 0 6px 18px rgba(122, 32, 47, 0.35);
+    margin-bottom: 36px;
+    box-shadow: 0 8px 22px rgba(212,175,55,0.35);
     letter-spacing: 1px;
 }
 
-.signup button {
-    padding: 14px 28px;
+.signup {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 34px;
+}
+
+.signup input {
+    padding: 15px 22px;
+    width: 62%;
     border: none;
-    background: linear-gradient(120deg, #7A202F, #5a1824, #7A202F);
+    border-radius: 40px;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.95);
+    box-shadow:
+        inset 0 4px 10px rgba(0,0,0,0.06),
+        0 2px 6px rgba(0,0,0,0.05);
+}
+
+.signup button {
+    padding: 15px 30px;
+    border: none;
+    background: linear-gradient(120deg, #d4af37, #b9932f, #d4af37);
     background-size: 200% auto;
     color: white;
     border-radius: 40px;
@@ -101,13 +128,20 @@ h1 {
 .signup button:hover {
     background-position: right center;
     transform: translateY(-3px);
-    box-shadow: 0 14px 30px rgba(122, 32, 47, 0.45);
+    box-shadow: 0 16px 35px rgba(212,175,55,0.45);
+}
+
+.brand-story {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.8;
+    margin-bottom: 30px;
 }
 
 .socials a {
-    margin: 0 14px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #7A202F;
+    color: #b9932f;
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
@@ -120,7 +154,7 @@ h1 {
     bottom: -4px;
     width: 0%;
     height: 1px;
-    background: #7A202F;
+    background: #d4af37;
     transition: width 0.3s ease;
 }
 
@@ -129,7 +163,7 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    h1 { font-size: 28px; letter-spacing: 3px; }
+    h1 { font-size: 30px; letter-spacing: 3px; }
     .signup { flex-direction: column; }
     .signup input, .signup button { width: 100%; }
 }

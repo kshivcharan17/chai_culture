@@ -17,10 +17,10 @@
             Premium instant chai tea premix inspired by royal Indian households.
         </p>
         <div class="launching">✨ Launching Soon ✨</div>
-        <div class="signup">
-            <input type="email" placeholder="Enter your email" />
-            <button>Notify Me</button>
-        </div>
+        <form class="signup" onsubmit="return handleSubmit(event)">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Notify Me</button>
+        </form>
         <p class="brand-story">
             Rooted in heritage and crafted with elegance, Chai Culture brings the timeless warmth of royal Indian chai traditions to modern lifestyles.
         </p>

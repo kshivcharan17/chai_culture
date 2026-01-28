@@ -1,7 +1,9 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f5f1e9, #e8dfd1);
+    background:
+        radial-gradient(circle at top center, rgba(201,162,39,0.15), transparent 40%),
+        linear-gradient(135deg, #f5f1e9, #e8dfd1);
     color: #3B2F2F;
     display: flex;
     justify-content: center;

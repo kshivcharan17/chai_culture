@@ -9,6 +9,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .container {
@@ -24,6 +36,16 @@ body {
         0 0 40px rgba(201,162,39,0.1);
     border: 1px solid rgba(201, 162, 39, 0.25);
     position: relative;
+    z-index: 1;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, rgba(201,162,39,0.2), transparent);
+    z-index: -1;
 }
 
 .logo {
@@ -83,6 +105,7 @@ h1 {
     outline: none;
     padding-left: 18px;
     box-shadow: inset 0 0 8px rgba(0,0,0,0.08);
+    font-size: 14px;
 }
 
 .signup button {
@@ -120,15 +143,6 @@ h1 {
 
 .socials a:hover {
     color: #a8861d;
-}
-
-.container::before {
-    content: "";
-    position: absolute;
-    top: -2px; left: -2px; right: -2px; bottom: -2px;
-    border-radius: 26px;
-    background: linear-gradient(135deg, rgba(201,162,39,0.2), transparent);
-    z-index: -1;
 }
 
 @media (max-width: 600px) {

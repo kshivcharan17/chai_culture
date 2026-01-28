@@ -9,7 +9,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
     position: relative;
 }
 
@@ -31,30 +30,12 @@ body::before {
     width: 92%;
     text-align: center;
     border: 1px solid rgba(212,175,55,0.35);
-    box-shadow:
-        0 40px 100px rgba(0,0,0,0.18),
-        0 0 80px rgba(212,175,55,0.12);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.18), 0 0 80px rgba(212,175,55,0.12);
     position: relative;
     z-index: 1;
 }
 
-.container::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 30px;
-    padding: 1px;
-    background: linear-gradient(120deg, #d4af37, transparent, #d4af37);
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
-
-.logo {
-    width: 120px;
-    margin-bottom: 28px;
-    filter: drop-shadow(0 0 16px rgba(212,175,55,0.45));
-}
+.logo { width: 120px; margin-bottom: 28px; }
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -64,7 +45,6 @@ h1 {
     background: linear-gradient(180deg, #f7e7b5, #d4af37, #a67c1b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 14px;
 }
 
 .divider {
@@ -74,28 +54,8 @@ h1 {
     background: linear-gradient(90deg, transparent, #d4af37, transparent);
 }
 
-.tagline {
-    font-size: 15px;
-    letter-spacing: 0.6px;
-    opacity: 0.85;
-    margin-bottom: 40px;
-}
-
-.launching {
-    display: inline-block;
-    padding: 13px 32px;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #d4af37, #b88a2b);
-    color: #fff;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 28px rgba(212,175,55,0.35);
-}
-
 .signup {
     display: flex;
-    justify-content: center;
     gap: 16px;
     margin-bottom: 38px;
     width: 100%;
@@ -107,10 +67,7 @@ h1 {
     padding: 16px 24px;
     border-radius: 50px;
     border: 1px solid rgba(212,175,55,0.25);
-    background: rgba(255,255,255,0.98);
     font-size: 14px;
-    outline: none;
-    box-shadow: inset 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .signup button {
@@ -118,13 +75,8 @@ h1 {
     border-radius: 50px;
     border: none;
     background: linear-gradient(120deg, #d4af37, #b88a2b, #d4af37);
-    background-size: 200% auto;
     color: white;
-    font-weight: 500;
-    letter-spacing: 0.5px;
     cursor: pointer;
-    transition: all 0.45s ease;
-    white-space: nowrap;
 }
 
 .brand-story {

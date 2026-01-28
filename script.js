@@ -1,6 +1,9 @@
-document.querySelector("button").addEventListener("click", () => {
-    alert("Thank you! We will notify you at launch.");
-});
+function handleSubmit(e) {
+    e.preventDefault();
+    const email = document.querySelector(".signup input").value;
+    alert("Thank you! We’ll notify you at " + email);
+    document.querySelector(".signup input").value = "";
+}
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".container").style.opacity = "0";
     setTimeout(() => {

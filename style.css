@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background:
-        radial-gradient(circle at top center, rgba(201,162,39,0.18), transparent 45%),
-        linear-gradient(135deg, #f5f1e9, #e6dccb);
-    color: #3B2F2F;
+        radial-gradient(circle at top center, rgba(122, 32, 47, 0.18), transparent 45%),
+        linear-gradient(135deg, #f8f4ee, #e9dfd2);
+    color: #3A2A2A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ body::before {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.78);
     backdrop-filter: blur(18px);
     border-radius: 26px;
     padding: 70px 45px;
@@ -33,8 +33,8 @@ body::before {
     text-align: center;
     box-shadow:
         0 30px 80px rgba(0, 0, 0, 0.14),
-        0 0 60px rgba(201,162,39,0.08);
-    border: 1px solid rgba(201, 162, 39, 0.28);
+        0 0 60px rgba(122, 32, 47, 0.08);
+    border: 1px solid rgba(122, 32, 47, 0.25);
     position: relative;
     z-index: 1;
 }
@@ -44,14 +44,14 @@ body::before {
     position: absolute;
     inset: -2px;
     border-radius: 28px;
-    background: linear-gradient(135deg, rgba(201,162,39,0.25), transparent 60%);
+    background: linear-gradient(135deg, rgba(122, 32, 47, 0.25), transparent 60%);
     z-index: -1;
 }
 
 .logo {
     width: 110px;
     margin-bottom: 22px;
-    filter: drop-shadow(0 0 12px rgba(201, 162, 39, 0.45));
+    filter: drop-shadow(0 0 12px rgba(122, 32, 47, 0.45));
 }
 
 h1 {
@@ -59,10 +59,10 @@ h1 {
     font-size: 46px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #C9A227;
+    color: #7A202F;
     margin-bottom: 10px;
     text-shadow:
-        0 0 10px rgba(201,162,39,0.25),
+        0 0 10px rgba(122,32,47,0.25),
         0 3px 4px rgba(0,0,0,0.12);
 }
 
@@ -70,52 +70,25 @@ h1 {
     width: 90px;
     height: 2px;
     margin: 20px auto 30px;
-    background: linear-gradient(90deg, transparent, #C9A227, transparent);
-}
-
-.tagline {
-    font-size: 15px;
-    opacity: 0.75;
-    margin-bottom: 32px;
-    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, transparent, #7A202F, transparent);
 }
 
 .launching {
     display: inline-block;
     padding: 11px 26px;
     border-radius: 40px;
-    background: linear-gradient(90deg, #C9A227, #a77d1c);
-    color: white;
+    background: linear-gradient(90deg, #7A202F, #5a1824);
+    color: #fff;
     font-size: 13px;
     margin-bottom: 35px;
-    box-shadow: 0 6px 18px rgba(201, 162, 39, 0.35);
+    box-shadow: 0 6px 18px rgba(122, 32, 47, 0.35);
     letter-spacing: 1px;
-}
-
-.signup {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 32px;
-}
-
-.signup input {
-    padding: 14px 20px;
-    width: 62%;
-    border: none;
-    border-radius: 40px;
-    outline: none;
-    font-size: 14px;
-    background: rgba(255,255,255,0.9);
-    box-shadow:
-        inset 0 3px 8px rgba(0,0,0,0.06),
-        0 2px 5px rgba(0,0,0,0.05);
 }
 
 .signup button {
     padding: 14px 28px;
     border: none;
-    background: linear-gradient(120deg, #C9A227, #b88a1c, #C9A227);
+    background: linear-gradient(120deg, #7A202F, #5a1824, #7A202F);
     background-size: 200% auto;
     color: white;
     border-radius: 40px;
@@ -128,20 +101,13 @@ h1 {
 .signup button:hover {
     background-position: right center;
     transform: translateY(-3px);
-    box-shadow: 0 14px 30px rgba(201, 162, 39, 0.45);
-}
-
-.brand-story {
-    font-size: 14px;
-    line-height: 1.7;
-    opacity: 0.78;
-    margin-bottom: 28px;
+    box-shadow: 0 14px 30px rgba(122, 32, 47, 0.45);
 }
 
 .socials a {
     margin: 0 14px;
     text-decoration: none;
-    color: #C9A227;
+    color: #7A202F;
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
@@ -154,7 +120,7 @@ h1 {
     bottom: -4px;
     width: 0%;
     height: 1px;
-    background: #C9A227;
+    background: #7A202F;
     transition: width 0.3s ease;
 }
 

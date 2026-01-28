@@ -2,15 +2,15 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background:
-        radial-gradient(circle at top center, rgba(212,175,55,0.15), transparent 45%),
-        linear-gradient(135deg, #f4efe6, #e7dcc8);
-    color: #2f2320;
+        radial-gradient(circle at 50% 0%, rgba(212,175,55,0.18), transparent 50%),
+        linear-gradient(140deg, #f6f1e7, #e9decc);
+    color: #2b211d;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 body::before {
@@ -18,144 +18,142 @@ body::before {
     position: fixed;
     inset: 0;
     background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
-    opacity: 0.03;
-    pointer-events: none;
+    opacity: 0.025;
     z-index: 0;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.82);
-    backdrop-filter: blur(20px);
-    border-radius: 28px;
-    padding: 75px 50px;
-    max-width: 720px;
-    width: 90%;
+    background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,248,235,0.92));
+    backdrop-filter: blur(24px);
+    border-radius: 30px;
+    padding: 85px 60px;
+    max-width: 740px;
+    width: 92%;
     text-align: center;
-    box-shadow:
-        0 35px 90px rgba(0, 0, 0, 0.16),
-        0 0 70px rgba(212,175,55,0.10);
     border: 1px solid rgba(212,175,55,0.35);
+    box-shadow:
+        0 40px 100px rgba(0,0,0,0.18),
+        0 0 80px rgba(212,175,55,0.12);
     position: relative;
     z-index: 1;
 }
 
-.container::before {
+.container::after {
     content: "";
     position: absolute;
-    inset: -2px;
+    inset: 0;
     border-radius: 30px;
-    background: linear-gradient(135deg, rgba(212,175,55,0.28), transparent 60%);
-    z-index: -1;
+    padding: 1px;
+    background: linear-gradient(120deg, #d4af37, transparent, #d4af37);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 
 .logo {
-    width: 115px;
-    margin-bottom: 24px;
-    filter: drop-shadow(0 0 14px rgba(212,175,55,0.45));
+    width: 120px;
+    margin-bottom: 28px;
+    filter: drop-shadow(0 0 16px rgba(212,175,55,0.45));
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    letter-spacing: 5px;
+    font-size: 52px;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    color: #b9932f;
-    margin-bottom: 12px;
-    text-shadow:
-        0 0 12px rgba(212,175,55,0.3),
-        0 3px 5px rgba(0,0,0,0.15);
+    background: linear-gradient(180deg, #f7e7b5, #d4af37, #a67c1b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 14px;
 }
 
 .divider {
-    width: 100px;
+    width: 120px;
     height: 2px;
-    margin: 22px auto 32px;
+    margin: 25px auto 36px;
     background: linear-gradient(90deg, transparent, #d4af37, transparent);
 }
 
 .tagline {
     font-size: 15px;
-    opacity: 0.8;
-    margin-bottom: 34px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
+    opacity: 0.85;
+    margin-bottom: 40px;
 }
 
 .launching {
     display: inline-block;
-    padding: 12px 28px;
-    border-radius: 40px;
-    background: linear-gradient(90deg, #d4af37, #b9932f);
+    padding: 13px 32px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #d4af37, #b88a2b);
     color: #fff;
     font-size: 13px;
-    margin-bottom: 36px;
-    box-shadow: 0 8px 22px rgba(212,175,55,0.35);
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 28px rgba(212,175,55,0.35);
 }
 
 .signup {
     display: flex;
     justify-content: center;
-    gap: 14px;
-    margin-bottom: 34px;
+    gap: 16px;
+    margin-bottom: 38px;
 }
 
 .signup input {
-    padding: 15px 22px;
-    width: 62%;
-    border: none;
-    border-radius: 40px;
-    outline: none;
+    padding: 16px 24px;
+    width: 64%;
+    border-radius: 50px;
+    border: 1px solid rgba(212,175,55,0.25);
+    background: rgba(255,255,255,0.98);
     font-size: 14px;
-    background: rgba(255,255,255,0.95);
-    box-shadow:
-        inset 0 4px 10px rgba(0,0,0,0.06),
-        0 2px 6px rgba(0,0,0,0.05);
+    outline: none;
+    box-shadow: inset 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .signup button {
-    padding: 15px 30px;
+    padding: 16px 32px;
+    border-radius: 50px;
     border: none;
-    background: linear-gradient(120deg, #d4af37, #b9932f, #d4af37);
+    background: linear-gradient(120deg, #d4af37, #b88a2b, #d4af37);
     background-size: 200% auto;
     color: white;
-    border-radius: 40px;
-    cursor: pointer;
     font-weight: 500;
-    transition: all 0.45s ease;
     letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.45s ease;
 }
 
 .signup button:hover {
     background-position: right center;
-    transform: translateY(-3px);
-    box-shadow: 0 16px 35px rgba(212,175,55,0.45);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(212,175,55,0.45);
 }
 
 .brand-story {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.8;
     opacity: 0.8;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 }
 
 .socials a {
-    margin: 0 15px;
+    margin: 0 16px;
     text-decoration: none;
-    color: #b9932f;
+    color: #b88a2b;
     font-weight: 500;
-    transition: all 0.3s ease;
     position: relative;
 }
 
 .socials a::after {
     content: "";
     position: absolute;
+    bottom: -5px;
     left: 0;
-    bottom: -4px;
     width: 0%;
     height: 1px;
     background: #d4af37;
-    transition: width 0.3s ease;
+    transition: 0.3s;
 }
 
 .socials a:hover::after {
@@ -163,7 +161,8 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    h1 { font-size: 30px; letter-spacing: 3px; }
+    h1 { font-size: 32px; letter-spacing: 3px; }
+    .container { padding: 60px 28px; }
     .signup { flex-direction: column; }
     .signup input, .signup button { width: 100%; }
 }
